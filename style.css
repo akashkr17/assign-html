@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgba(0, 128, 128, 0.1);
+    background-size: cover;
+}
+html, body {
+    margin: 0;
+    padding:  0;
+    width: 100;
+    height: 100;
+    font-family: Poppins !important;
+
+}
+header{
+    display:block;
+    width:100%; 
+
+}
+.logo-div 
+{
+    color: #fff;
+    height:60px;
+    line-height: 60px;
+    background: bisque;
+    float: left;
+    width:100%;
+}
+
+.main-logo
+{
+
+    padding-left: 30px;
+    
+}
+.logo-img{
+    width:300px;
+}
+.desc-logo{
+    font-size: 22px;
+    font-weight: lighter;
+    padding-left: 20px;
+    color: dimgray;
+    position: absolute;
+    top:3px
+}
+
+nav{
+    float: left;
+    clear:both;
+    background: blueviolet;
+    width:100%;
+
+}
+ nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    
+}
+nav ul li{
+    list-style-type: none;
+    
+}
+nav ul li a{
+
+line-height: 56px; 
+padding: 10px 20px;
+    
+color: #fff;
+text-decoration:none;
+background: transparent;
+text-align: center;
+border-radius: 5px;
+font-family: sans-serif;
+border: none;  
+    
+
+}
+
+nav ul li a:hover{
+    color: #fff;
+    background:black;
+    transition-duration: .7s;
+}
+nav ul li a.active{
+    color: #fff;
+    transition-duration: .7s;
+}
+
+
+.menu-toggle{
+    color:#fff;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  table {
+    font-family: arial, sans-serif;
+    width: 100%;
+  }
+  
+  td, th {
+    
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+@media (max-width: 1111px){
+    header .logo{
+      line-height: 30px;
+    }
+    header nav {
+        
+        position: absolute;
+        
+        width: 100%;
+        height: calc(100vh -50px);
+        background: #333;
+        top: 50px;
+        left: -100%;
+        transition:0.5s;
+    }
+    header nav.active{
+        left: 0;
+    }
+    
+    header nav ul{
+        
+        display: block;
+        text-align: center;
+    }
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0,0,0,.2);
+        
+        line-height: 50px;
+    }
+}
+
+
+
+
+.social {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+.social ul li{
+    list-style-type: none;
+    color:red;
+    padding-top: 20px;
+    font-size: 150%;
+
+}
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    
+    top: 0%;
+    
+
+}
+
+.side-strip{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -4em;
+    transform: rotate(90deg);
+    color:blue;
+    letter-spacing: 4px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+

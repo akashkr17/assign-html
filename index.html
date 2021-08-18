@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <title>w3school</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-div">
+            <span class="main-logo"><img class="logo-img" src="src/w3logo.png"></span>
+            <span class="desc-logo">THE WORLD'S LARGEST WEB DEVELOPER WEBSITE</span>
+        </div>
+    </header>
+
+
+    <nav class="active">
+        <ul>
+            <li><a href="#" class="active">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="index2.html">PYTHON</a></li>
+            <li><a href="#">JAVASCRIPT</a></li>
+            <li><a href="login1.html">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+
+    <div class="content">
+        <div class="card">
+            <div class="container">
+                <h4><b>HTML Introduction</b></h4>
+                <p>HTML is the standard markup language for creating webpages</p>
+                <ol>
+                    <li><a href="#1">What is HTML</a></li>
+                    <li><a href="#2">What is HTML Element</a></li>
+                    <li><a href="#3">What is Web Browsers</a></li>
+                </ol>
+            </div>
+        </div>
+
+        <div id="1" class="card">
+            <div class="container">
+                <h4><b>What is HTML</b></h4>
+                <ul>
+                    <li>HTML stands for Hyper Text Markup Language</li>
+                    <li>HTML is the standard markup language for creating Web pages</li>
+                    <li>HTML describes the structure of a Web page</li>
+                    <li>HTML consists of a series of elements</li>
+                    <li>HTML elements tell the browser how to display the content</li>
+                    <li>HTMl elements lanel pieces of content such as "this is a heading","this is a<br>
+                        paragraph", "this is a link", etc.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="2" class="card">
+            <div class="container">
+                <h4><b>What is HTML Element?</b></h4>
+                <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
+                <p>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</p>
+                <p> The HTML element is everything from the start tag to the end tag:</p>
+                <p>&lt;H1&gt;My First Heading &lt;/H1&gt;</p>
+                <p>&lt;p&gt;My First Paragraph &lt;/p&gt;</p>
+                <table>
+                    <tr>
+                        <th>Start tag</th>
+                        <th>Element content</th>
+                        <th>End tag</th>
+                    </tr>
+                    <tr>
+                        <td>&lt;h1&gt;</td>
+                        <td>My First Heading</td>
+                        <td>&lt;/h1&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;p&gt;</td>
+                        <td>My First Paragraph</td>
+                        <td>&lt;/p&gt;</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;br&gt;</td>
+                        <td>none</td>
+                        <td>none</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="3" class="card">
+            <div class="container">
+                <h4><b>What is Web Browsers?</b></h4>
+                <p>The purpose of a Web browser (Chrome,Edge,Firefox,Safari) is to read HTML documents</p>
+                <p>and display them correctly.</p>
+                <p>A browser does not display the HTML tags, but uses them to determine how to display the</p>
+                <p>document:</p>
+                <div class="img-div">
+                    <img src="src/browser.png" alt="browser image example">
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <h4><b>Submit a Review</b></h4>
+                <div class="box">
+                    <form>
+                        <div class="inputbox">
+                            <label>Name:</label>
+                            <input type="text" name="" required="">
+                        </div>
+                        <div class="inputbox">
+                            <label>Gender:</label>
+                              <input type="radio" id="male" name="gender" required value="male">
+                              <label for="male">Male</label>
+                              <input type="radio" id="female" name="gender" required value="female">
+                              <label for="female">Female</label>
+                              <input type="radio" id="other" name="gender" required value="other">
+                              <label for="other">Other</label><br>
+                        </div>
+                        <div class="inputbox">
+                            <label for="rating">Rate it:</label>
+                            <select required name="rating" id="rate">
+                                <option value="excellent">Excellent</option>
+                                <option value="verygood">Very Good</option>
+                                <option value="good">Good</option>
+                                <option value="poor">Poor</option>
+                            </select>
+                        </div>
+                        <div class="inputbox">
+                            <textarea id="review" name="review" rows="6" cols="50">
+                                Please add a review
+                            </textarea>
+                        </div>
+                        <input type="submit" name="" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
