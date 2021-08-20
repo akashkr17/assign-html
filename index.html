@@ -9,6 +9,7 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <title>w3school</title>
@@ -22,37 +23,31 @@
         </div>
     </header>
 
-
     <nav class="active">
-        <ul>
-            <li><a href="#" class="active">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="index2.html">PYTHON</a></li>
-            <li><a href="#">JAVASCRIPT</a></li>
-            <li><a href="login1.html">LOGIN</a></li>
+        <ul style="padding-left: 15px;">
+            <li><a href="https://www.w3schools.com/html/default.asp" class="active">HTML</a></li>
+            <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+            <li><a href="https://www.w3schools.com/python/default.asp">PYTHON</a></li>
+            <li><a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
         </ul>
     </nav>
 
-    <div class="menu-toggle">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-
     <div class="content">
         <div class="card">
-            <div class="container">
-                <h4><b>HTML Introduction</b></h4>
+            <div class="card-content">
+                <h3 style="color:coral"><b>HTML Introduction</b></h3>
                 <p>HTML is the standard markup language for creating webpages</p>
                 <ol>
-                    <li><a href="#1">What is HTML</a></li>
-                    <li><a href="#2">What is HTML Element</a></li>
-                    <li><a href="#3">What is Web Browsers</a></li>
+                    <li><a href="#bookmark1">What is HTML</a></li>
+                    <li><a href="#bookmark2">What is HTML Element</a></li>
+                    <li><a href="#bookmark3">What is Web Browsers</a></li>
                 </ol>
             </div>
         </div>
 
-        <div id="1" class="card">
-            <div class="container">
-                <h4><b>What is HTML</b></h4>
+        <div id="bookmark1" class="card">
+            <div class="card-content">
+                <h3 style="color:coral"><b>What is HTML</b></h3>
                 <ul>
                     <li>HTML stands for Hyper Text Markup Language</li>
                     <li>HTML is the standard markup language for creating Web pages</li>
@@ -65,9 +60,9 @@
             </div>
         </div>
 
-        <div id="2" class="card">
-            <div class="container">
-                <h4><b>What is HTML Element?</b></h4>
+        <div id="bookmark2" class="card">
+            <div class="card-content">
+                <h3 style="color:coral"><b>What is HTML Element?</b></h3>
                 <p>An HTML element is defined by a start tag, some content, and an end tag:</p>
                 <p>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</p>
                 <p> The HTML element is everything from the start tag to the end tag:</p>
@@ -98,27 +93,27 @@
             </div>
         </div>
 
-        <div id="3" class="card">
-            <div class="container">
-                <h4><b>What is Web Browsers?</b></h4>
+        <div id="bookmark3" class="card">
+            <div class="card-content">
+                <h3 style="color:coral"><b>What is Web Browsers?</b></h3>
                 <p>The purpose of a Web browser (Chrome,Edge,Firefox,Safari) is to read HTML documents</p>
                 <p>and display them correctly.</p>
                 <p>A browser does not display the HTML tags, but uses them to determine how to display the</p>
                 <p>document:</p>
                 <div class="img-div">
-                    <img src="src/browser.png" alt="browser image example">
+                    <img src="src/browser.png" style="width: 60%;" alt="browser image example">
                 </div>
             </div>
         </div>
 
         <div class="card">
-            <div class="container">
-                <h4><b>Submit a Review</b></h4>
+            <div class="card-content">
+                <h3 style="color:coral"><b>Submit a Review</b></h3>
                 <div class="box">
-                    <form>
+                    <form id="myForm" onsubmit="submitForm(this); return false  ">
                         <div class="inputbox">
                             <label>Name:</label>
-                            <input type="text" name="" required="">
+                            <input type="text" name="name" required="">
                         </div>
                         <div class="inputbox">
                             <label>Gender:</label>
@@ -139,16 +134,78 @@
                             </select>
                         </div>
                         <div class="inputbox">
-                            <textarea id="review" name="review" rows="6" cols="50">
-                                Please add a review
-                            </textarea>
+                            <textarea id="review" placeholder="Please add a review" name="review" rows="6"
+                                cols="50"></textarea>
                         </div>
-                        <input type="submit" name="" value="Submit">
+                        <div class="inputbox">
+                            <input type="submit" class="button" id="submit" value="Submit">
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- Site footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <img class="logo-img" src="src/w3logo.png">
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="https://www.w3schools.com/html/default.asp" class="active">HTML</a></li>
+                        <li><a href="https://www.w3schools.com/css/default.asp">CSS</a></li>
+                        <li><a href="https://www.w3schools.com/python/default.asp">PYTHON</a></li>
+                        <li><a href="https://www.w3schools.com/js/default.asp">JAVASCRIPT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row" style="justify-content: center;">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- script for submitting the form -->
+    <script>
+        function submitForm(that) {
+            /* sweetalert2 plugin for showing alerts */
+            Swal.fire({
+                title: 'Do you want to submit the form?',
+                showCancelButton: true,
+                confirmButtonText: `Submit`,
+            }).then((result) => {
+                /* Read more about isConfirmed, isDenied below */
+                if (result.isConfirmed) {
+                    document.getElementById("myForm").reset();
+                    Swal.fire({
+                        position: 'top-end',
+                        icon: 'success',
+                        title: 'Your Review has been submitted',
+                        showConfirmButton: false,
+                        timer: 1500
+                    })
+                } else if (result.isDenied) {
+                    Swal.fire('Changes are not saved', '', 'info')
+                }
+            })
+
+
+        }
+    </script>
 </body>
 
 </html>
